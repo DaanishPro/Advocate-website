@@ -1562,6 +1562,19 @@ a:focus {
     border: 2px solid #aa9166;
 }
 
+
+.contact .contact-item j {
+    display: inline-block;
+    width: 105px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #aa9166;
+    border: 2px solid #aa9166;
+}
+
 .contact .contact-text {
     position: relative;
     width: auto;
