@@ -142,13 +142,7 @@ a:focus {
     overflow: hidden;
 }
 
-.top-bar .logo2 h1 {
-    margin: 0;
-    color: #aa9166;
-    font-size: 75px;
-    line-height: 55px;
-    font-weight: 800;
-}
+
 
 .top-bar .logo2 img {
     max-width: 100%;
