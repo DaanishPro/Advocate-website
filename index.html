@@ -25,9 +25,39 @@
     </head>
 
     <body>
-        <div class="wrapper">
+        <div class="relative">
             
+            <!-- Splash Screen Start -->
+            <div
+            id="splash"
+            class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-opacity duration-700 ease-in-out"
+          >
+            <img src="img/logo2.png" alt="Logo" class="h-60 w-auto mb-6" />
+            <h1
+              class="text-6xl font-medium"
+              style="color: #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal;"
+            >
+              ZA
+            </h1>
+            <span class="text-2xl text-[#d4af7f] mt-2">Legal Associates</span>
+          </div>
+          
+  <!-- Splash Screen End -->
 
+<!-- JavaScript for Splash screen timeout -->
+<script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("splash").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("splash").style.display = "none";
+          document.getElementById("mainContent").classList.remove("opacity-0");
+        }, 700); // match transition time
+      }, 2500); // splash screen delay
+    });
+  </script>
+
+  <div id="mainContent" class="wrapper opacity-0 transition-opacity duration-700 ease-in-out">
             <!-- Top Bar Start -->
 
             <div class="top-bar">
@@ -1319,6 +1349,11 @@
             
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
+
+
+    <!--Yeh jo div hai neeche ka woh topbar k just upar likha hua div hai-->
+    </div>
+
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
