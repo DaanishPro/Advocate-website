@@ -81,212 +81,290 @@
    
          <!-- Navbar & Appointment Modal starts -->
 
-                           <!-- Navbar Start -->
-<nav class="bg-[#121518] relative z-50">
-    <div class="max-w-[1440px] mx-auto px-[20px] lg:px-[60px] py-2 flex items-center justify-between">
-      <div class="lg:hidden">
-        <span class="text-white font-bold text-xl">MENU</span>
-      </div>
-      <div class="hidden lg:flex space-x-6 uppercase text-white text-sm font-medium" id="nav-links">
-        <a href="index.html" class="nav-link hover:text-[#aa9166] transition duration-200">Home</a>
-        <a href="about.html" class="nav-link hover:text-[#aa9166] transition duration-200">About</a>
-        <a href="service.html" class="nav-link hover:text-[#aa9166] transition duration-200">Practice</a>
-        <a href="team.html" class="nav-link hover:text-[#aa9166] transition duration-200">Attorneys</a>
-        <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
-      </div>
-      <div class="hidden lg:block">
-        <button id="appointment-btn" class="text-white border-2 border-[#aa9166] px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
-          Get Appointment
-        </button>
-      </div>
-      <div class="lg:hidden">
-        <button id="menu-toggle" class="text-white border border-gray-500 p-2 rounded-md hover:bg-[#1f2326] transition duration-200">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4" style="background-color: #121518;">
-      <div class="flex flex-col space-y-2 uppercase text-white text-sm font-medium py-4" id="mobile-nav-links">
-        <a href="index.html" class="nav-link hover:text-[#aa9166] transition duration-200">Home</a>
-        <a href="about.html" class="nav-link hover:text-[#aa9166] transition duration-200">About</a>
-        <a href="service.html" class="nav-link hover:text-[#aa9166] transition duration-200">Practice</a>
-        <a href="team.html" class="nav-link hover:text-[#aa9166] transition duration-200">Attorneys</a>
-        <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
-        <button id="mobile-appointment-btn" class="text-white border-2 border-[#aa9166] text-center px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
-          Get Appointment
-        </button>
-      </div>
-    </div>
-  </nav>    
-                          <!-- Navbar end -->
-  
-                   <!-- Appointment Form starts -->
-  <div id="appointment-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 overflow-y-auto px-4 py-10">
-    <div class="bg-white rounded-lg w-full max-w-md mx-auto flex flex-col max-h-[90vh]">
-      <!-- Modal Header -->
-      <div class="flex justify-between items-center bg-[#121518] p-4 ">
-        <h3 style=" color:#d4af7f; font-weight: semibold; font-size:x-large;  font-family: Arial, Helvetica, sans-serif;font-style: normal; ">Fix an Appointment </h3>
-        <button id="close-modal" class="text-white text-2xl">&times;</button>
-      </div>
-  
-      <!-- Modal Scrollable Body -->
-      <div class="overflow-y-auto p-6">
-        <form id="appointment-form">
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-gray-700 mb-2 ">Date</label>
-              <input type="date" name="date" required class="w-full px-3 py-2 border rounded">
+         <nav class="bg-[#121518] relative z-50">
+            <div class="max-w-[1440px] mx-auto px-[20px] lg:px-[60px] py-2 flex items-center justify-between">
+                <div class="lg:hidden">
+                    <span class="text-white font-bold text-xl">MENU</span>
+                </div>
+                <div class="hidden lg:flex space-x-6 uppercase text-white text-sm font-medium" id="nav-links">
+                    <a href="index.html" class="nav-link hover:text-[#aa9166] transition duration-200">Home</a>
+                    <a href="about.html" class="nav-link hover:text-[#aa9166] transition duration-200">About</a>
+                    <a href="service.html" class="nav-link hover:text-[#aa9166] transition duration-200">Practice</a>
+                    <a href="team.html" class="nav-link hover:text-[#aa9166] transition duration-200">Attorneys</a>
+                    <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
+                </div>
+                <div class="hidden lg:block">
+                    <button id="appointment-btn" class="text-white border-2 border-[#aa9166] px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
+                        Get Appointment
+                    </button>
+                </div>
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-white border border-gray-500 p-2 rounded-md hover:bg-[#1f2326] transition duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div>
-              <label class="block text-gray-700 mb-2">Time</label>
-              <select name="time" required class="w-full px-3 py-2 border rounded">
-                <option value="" disabled selected>Select Time</option>
-                <option>10:00 AM</option>
-                <option>11:30 AM</option>
-                <option>01:00 PM</option>
-                <option>03:00 PM</option>
-                <option>05:00 PM</option>
-                <option>07:30 PM</option>
-              </select>
+            <div id="mobile-menu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4" style="background-color: #121518;">
+                <div class="flex flex-col space-y-2 uppercase text-white text-sm font-medium py-4" id="mobile-nav-links">
+                    <a href="index.html" class="nav-link hover:text-[#aa9166] transition duration-200">Home</a>
+                    <a href="about.html" class="nav-link hover:text-[#aa9166] transition duration-200">About</a>
+                    <a href="service.html" class="nav-link hover:text-[#aa9166] transition duration-200">Practice</a>
+                    <a href="team.html" class="nav-link hover:text-[#aa9166] transition duration-200">Attorneys</a>
+                    <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
+                    <button id="mobile-appointment-btn" class="text-white border-2 border-[#aa9166] text-center px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
+                        Get Appointment
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 mb-2">Name</label>
-            <input type="text" name="name" required class="w-full px-3 py-2 border rounded">
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 mb-2">Email Id</label>
-            <input type="email" name="email" required class="w-full px-3 py-2 border rounded">
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 mb-2">Mobile No.</label>
-            <input type="tel" name="phone" required class="w-full px-3 py-2 border rounded">
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 mb-2">Message</label>
-            <textarea name="message" class="w-full px-3 py-2 border rounded" rows="3"></textarea>
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 mb-2">Captcha</label>
-            <div class="flex items-center space-x-3">
-              <canvas id="captchaCanvas" width="100" height="40" class="border"></canvas>
-              <button type="button" id="refreshCaptcha" class="text-sm text-blue-500 hover:underline">Refresh</button>
+        </nav>    
+        <!-- Navbar end -->
+        
+        <!-- Appointment Form starts -->
+        <div id="appointment-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 overflow-y-auto px-4 py-10">
+            <div class="bg-white rounded-lg w-full max-w-md mx-auto flex flex-col max-h-[90vh]">
+                <!-- Modal Header -->
+                <div class="flex justify-between items-center bg-[#121518] p-4">
+                    <h3 style="color:#d4af7f; font-weight: semibold; font-size:x-large; font-family: Arial, Helvetica, sans-serif;font-style: normal;">Fix an Appointment</h3>
+                    <button id="close-modal" class="text-white text-2xl">&times;</button>
+                </div>
+        
+                <!-- Modal Scrollable Body -->
+                <div class="overflow-y-auto p-6">
+                    <!-- Message Container -->
+                    <div id="form-message" class="hidden mb-4 p-4 rounded-md text-center"></div>
+                    
+                    <form id="appointment-form">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Date</label>
+                                <input type="date" name="date" required class="w-full px-3 py-2 border rounded">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Time</label>
+                                <select name="time" required class="w-full px-3 py-2 border rounded">
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:30 AM</option>
+                                    <option>01:00 PM</option>
+                                    <option>03:00 PM</option>
+                                    <option>05:00 PM</option>
+                                    <option>07:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" name="name" required class="w-full px-3 py-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Email Id</label>
+                            <input type="email" name="email" required class="w-full px-3 py-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Mobile No.</label>
+                            <input type="tel" name="phone" required class="w-full px-3 py-2 border rounded">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea name="message" class="w-full px-3 py-2 border rounded" rows="3"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Captcha</label>
+                            <div class="flex items-center space-x-3">
+                                <canvas id="captchaCanvas" width="100" height="40" class="border"></canvas>
+                                <button type="button" id="refreshCaptcha" class="text-sm text-blue-500 hover:underline">Refresh</button>
+                            </div>
+                            <input type="text" id="captchaInput" name="captcha" required class="mt-2 w-full px-3 py-2 border rounded" placeholder="Enter captcha">
+                        </div>
+                        <button type="submit" class="w-full bg-[#aa9166] text-white py-2 rounded hover:bg-[#9a8156] transition duration-200">
+                            Submit
+                        </button>
+                    </form>
+                    <div class="mt-6 text-sm text-gray-600">
+                        <p class="mb-2">* Subjected to Confirmation</p>
+                        <p class="mb-4">* Min. Consultation Fees Rs.5,000/-</p>
+                        <!--working hours  card starts-->
+                        <div style="padding-top: 0.5rem; background-color: #121518; padding-left: 0.25rem;">
+                            <h4 style="font-size:x-large; color: #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal;">Working Hours</h4>
+                            <div class="flex justify-between mb-1 mt-4 text-white">
+                                <span>Monday - Friday</span>
+                                <span class="pr-1">10.00 am - 09.00 pm</span>
+                            </div>
+                            <div style="border-top: 1px dashed #d4af7f; margin-top: 15px; border-spacing: 3px;"></div>
+                            <div class="flex justify-between text-white mt-3 pb-2">
+                                <span>Saturday - Sunday</span>
+                                <span class="pr-1">Closed</span>
+                            </div>
+                        </div>
+                        <!--working hours card end-->
+                    </div>
+                </div>
             </div>
-            <input type="text" id="captchaInput" name="captcha" required class="mt-2 w-full px-3 py-2 border rounded" placeholder="Enter captcha">
-          </div>
-          <button type="submit" class="w-full bg-[#aa9166] text-white py-2 rounded hover:bg-[#9a8156] transition duration-200  ">
-            Submit
-          </button>
-        </form>
-        <div class="mt-6 text-sm text-gray-600">
-          <p class="mb-2">* Subjected to Confirmation</p>
-          <p class="mb-4">* Min. Consultation Fees Rs.5,000/-</p>
-          <!--working hours  card starts-->
-          <div style="padding-top: 0.5rem; background-color: #121518; padding-left: 0.25rem;  ">
-            <h4 style=" font-size:x-large; color:  #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal; ">Working Hours</h4>
-            <div class="flex justify-between mb-1 mt-4 text-white ">
-              <span>Monday - Friday</span>
-              <span class="pr-1">10.00 am - 09.00 pm</span>
-            </div>
-            <div style="border-top: 1px dashed #d4af7f ; margin-top: 15px; border-spacing: 3px; "></div>
-            <div class="flex justify-between text-white mt-3 pb-2 ">
-              <span>Saturday - Sunday</span>
-              <span class="pr-1">Closed</span>
-            </div>
-          </div>
-          <!--working hours card end-->
         </div>
-      </div>
-    </div>
-  </div>
-               <!--Appointment form ends-->
-
-             <!-- Firebase & Script Logic starts -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyAekhLMpJrP3RQy10buol14l13ggOwhWi8",
-      authDomain: "practice-f4979.firebaseapp.com",
-      databaseURL: "https://practice-f4979-default-rtdb.firebaseio.com",
-      projectId: "practice-f4979",
-      storageBucket: "practice-f4979.appspot.com",
-      messagingSenderId: "822900937988",
-      appId: "1:822900937988:web:e95b54220902c12fec6c51",
-      measurementId: "G-47KR49G7KX"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const database = firebase.database();
-  
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-    let isOpen = false;
-    menuToggle.addEventListener("click", function () {
-      mobileMenu.classList.toggle("max-h-0");
-      mobileMenu.classList.toggle("max-h-[500px]");
-      isOpen = !isOpen;
-    });
-  
-    const appointmentBtn = document.getElementById("appointment-btn");
-    const mobileAppointmentBtn = document.getElementById("mobile-appointment-btn");
-    const appointmentModal = document.getElementById("appointment-modal");
-    const closeModal = document.getElementById("close-modal");
-  
-    function toggleModal() {
-      appointmentModal.classList.toggle('hidden');
-      appointmentModal.classList.toggle('flex');
-      generateCaptcha();
-    }
-  
-    appointmentBtn.addEventListener('click', toggleModal);
-    mobileAppointmentBtn.addEventListener('click', toggleModal);
-    closeModal.addEventListener('click', toggleModal);
-  
-    let captchaValue = "";
-    function generateCaptcha() {
-      const ctx = document.getElementById("captchaCanvas").getContext("2d");
-      ctx.clearRect(0, 0, 100, 40);
-      captchaValue = Math.random().toString(36).substring(2, 6).toUpperCase();
-      ctx.font = "24px Arial";
-      ctx.fillStyle = "#333";
-      ctx.fillText(captchaValue, 10, 28);
-    }
-    document.getElementById("refreshCaptcha").addEventListener("click", generateCaptcha);
-  
-    document.getElementById("appointment-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (document.getElementById("captchaInput").value.toUpperCase() !== captchaValue) {
-        alert("Invalid captcha, please try again.");
-        return;
-      }
-  
-      const data = {
-        date: this.date.value,
-        time: this.time.value,
-        name: this.name.value,
-        email: this.email.value,
-        phone: this.phone.value,
-        message: this.message.value,
-        timestamp: new Date().toISOString()
-      };
-  
-      firebase.database().ref('appointments').push(data)
-        .then(() => {
-          alert("Appointment submitted!");
-          this.reset();
-          toggleModal();
-        })
-        .catch(err => {
-          console.error(err);
-          alert("Something went wrong. Please try again.");
-        });
-    });
-  
-    window.onload = generateCaptcha;
-  </script>
-           <!-- Firebase & Script Logic ends -->
+        <!--Appointment form ends-->
+        
+        <!-- Firebase & Script Logic starts -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+        <script>
+            // Firebase Configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyAekhLMpJrP3RQy10buol14l13ggOwhWi8",
+                authDomain: "practice-f4979.firebaseapp.com",
+                databaseURL: "https://practice-f4979-default-rtdb.firebaseio.com",
+                projectId: "practice-f4979",
+                storageBucket: "practice-f4979.appspot.com",
+                messagingSenderId: "822900937988",
+                appId: "1:822900937988:web:e95b54220902c12fec6c51",
+                measurementId: "G-47KR49G7KX"
+            };
+        
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const database = firebase.database();
+        
+            // Mobile Menu Toggle Fix
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+            
+            menuToggle.addEventListener("click", function() {
+                const isOpen = mobileMenu.classList.contains("max-h-[500px]");
+                
+                if (isOpen) {
+                    mobileMenu.classList.remove("max-h-[500px]");
+                    mobileMenu.classList.add("max-h-0");
+                } else {
+                    mobileMenu.classList.remove("max-h-0");
+                    mobileMenu.classList.add("max-h-[500px]");
+                }
+            });
+        
+            // Generate Captcha
+            function generateCaptcha() {
+                const ctx = document.getElementById("captchaCanvas").getContext("2d");
+                ctx.clearRect(0, 0, 100, 40);
+                captchaValue = Math.random().toString(36).substring(2, 6).toUpperCase();
+                ctx.font = "24px Arial";
+                ctx.fillStyle = "#333";
+                ctx.fillText(captchaValue, 10, 28);
+            }
+        
+            // Show Message Function (Improved)
+            function showMessage(type, title, detail = "") {
+                const formMessage = document.getElementById("form-message");
+                formMessage.className = `mb-4 p-4 rounded-md text-center font-medium ${
+                    type === 'success' 
+                        ? 'bg-green-100 border-l-4 border-green-500 text-green-700' 
+                        : 'bg-red-100 border-l-4 border-red-500 text-red-700'
+                }`;
+                
+                formMessage.innerHTML = `
+                    <p class="font-bold">${title}</p>
+                    ${detail ? `<p class="text-sm mt-1">${detail}</p>` : ''}
+                `;
+                
+                formMessage.classList.remove('hidden');
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setTimeout(() => formMessage.classList.add('hidden'), 5000);
+            }
+        
+            // Validate Date and Time
+            function validateDateTime(selectedDate, selectedTime) {
+                const now = new Date();
+                const today = new Date(now.toDateString());
+                const selected = new Date(selectedDate);
+                
+                // Date validation
+                if (selected < today) {
+                    showMessage('error', 'Invalid Date', 'Please select today\'s date or a future date.');
+                    return false;
+                }
+                
+                // Time validation only for current date
+                if (selected.getTime() === today.getTime()) {
+                    const timeParts = selectedTime.split(' ');
+                    let [hours, minutes] = timeParts[0].split(':').map(Number);
+                    const period = timeParts[1];
+                    
+                    // Convert to 24-hour format
+                    if (period === 'PM' && hours !== 12) hours += 12;
+                    if (period === 'AM' && hours === 12) hours = 0;
+                    
+                    // Create comparison date
+                    const selectedDateTime = new Date(selected);
+                    selectedDateTime.setHours(hours, minutes, 0, 0);
+                    
+                    if (selectedDateTime < now) {
+                        showMessage('error', 'Invalid Time', 'The selected time has already passed. Please choose a future time.');
+                        return false;
+                    }
+                }
+                
+                return true;
+            }
+        
+            // Form Submission
+            document.getElementById("appointment-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                const formMessage = document.getElementById("form-message");
+                formMessage.classList.add('hidden');
+                
+                // Validate Date and Time
+                if (!validateDateTime(this.date.value, this.time.value)) {
+                    return;
+                }
+                
+                // Validate Captcha
+                const userCaptcha = document.getElementById("captchaInput").value.toUpperCase();
+                if (userCaptcha !== captchaValue) {
+                    showMessage('error', 'Invalid Captcha', 'Please enter the correct captcha code.');
+                    generateCaptcha();
+                    return;
+                }
+                
+                // Submit to Firebase
+                database.ref('appointments').push({
+                    date: this.date.value,
+                    time: this.time.value,
+                    name: this.name.value,
+                    email: this.email.value,
+                    phone: this.phone.value,
+                    message: this.message.value,
+                    timestamp: new Date().toISOString()
+                }).then(() => {
+                    showMessage('success', 'Appointment Submitted!', 'We will contact you shortly.');
+                    this.reset();
+                    generateCaptcha();
+                }).catch((error) => {
+                    console.error("Firebase Error:", error);
+                    showMessage('error', 'Submission Failed', 'Something went wrong. Please try again.');
+                });
+            });
+        
+            // Initialize
+            window.addEventListener('DOMContentLoaded', () => {
+                generateCaptcha();
+                const today = new Date().toISOString().split('T')[0];
+                document.querySelector('input[type="date"]').min = today;
+                
+                // Set up event listeners
+                document.getElementById("appointment-btn").addEventListener('click', toggleModal);
+                document.getElementById("mobile-appointment-btn").addEventListener('click', toggleModal);
+                document.getElementById("close-modal").addEventListener('click', toggleModal);
+                document.getElementById("refreshCaptcha").addEventListener('click', generateCaptcha);
+            });
+        
+            function toggleModal() {
+                const modal = document.getElementById("appointment-modal");
+                modal.classList.toggle('hidden');
+                modal.classList.toggle('flex');
+                generateCaptcha();
+                document.getElementById("form-message").classList.add('hidden');
+            }
+        </script>
+        <!-- Firebase & Script Logic ends -->
   
      
 
