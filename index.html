@@ -25,39 +25,49 @@
     </head>
 
     <body>
-        <div class="relative">
-            
-            <!-- Splash Screen Start -->
-            <div
-            id="splash"
-            class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-opacity duration-700 ease-in-out"
-          >
-            <img src="img/logo2.png" alt="Logo" class="h-60 w-auto mb-6" />
-            <h1
-              class="text-6xl font-medium"
-              style="color: #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal;"
-            >
-              ZA
-            </h1>
-            <span class="text-2xl text-[#d4af7f] mt-2">Legal Associates</span>
-          </div>
-          
-  <!-- Splash Screen End -->
+        <!-- Splash Screen Start -->
+<div
+id="splash"
+class="fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-all duration-700 ease-in-out"
+>
+<img
+  src="img/logo2.png"
+  alt="Logo"
+  id="splashLogo"
+  class="h-100 w-auto mb-6 transition-transform duration-700 ease-in-out"
+/>
+</div>
+<!-- Splash Screen End -->
 
-<!-- JavaScript for Splash screen timeout -->
+<!-- JavaScript for Splash screen timeout with animation -->
 <script>
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        document.getElementById("splash").style.opacity = "0";
-        setTimeout(() => {
-          document.getElementById("splash").style.display = "none";
-          document.getElementById("mainContent").classList.remove("opacity-0");
-        }, 700); // match transition time
-      }, 2500); // splash screen delay
-    });
-  </script>
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    // Animate logo shrinking before hiding splash
+    const splashLogo = document.getElementById("splashLogo");
+    splashLogo.style.transform = "scale(0.8)";
+    splashLogo.style.opacity = "0";
 
-  <div id="mainContent" class="wrapper opacity-0 transition-opacity duration-700 ease-in-out">
+    const splash = document.getElementById("splash");
+
+    // Also fade the background
+    splash.style.opacity = "0";
+
+    // After animation ends, hide splash and show main content
+    setTimeout(() => {
+      splash.style.display = "none";
+      const mainContent = document.getElementById("mainContent");
+      mainContent.classList.remove("opacity-0");
+    }, 700); // match transition time
+  }, 1000); // 2 second splash display
+});
+</script>
+
+<!-- Main Content (hidden initially) -->
+<div id="mainContent" class="wrapper opacity-0 transition-opacity duration-700 ease-in-out">
+<!-- yaha pr website ka content aaega -->
+
+
             <!-- Top Bar Start -->
 
             <div class="top-bar">
@@ -1353,6 +1363,7 @@
 
     <!--Yeh jo div hai neeche ka woh topbar k just upar likha hua div hai-->
     </div>
+</div>
 
 
         <!-- JavaScript Libraries -->
