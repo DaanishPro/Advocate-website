@@ -25,50 +25,46 @@
     </head>
 
     <body>
-        <!-- Splash Screen Start -->
-<!-- Splash Screen Start -->
+ <!-- Splash Screen Start -->
 <div
-  id="splash"
-  class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-all duration-700 ease-in-out"
+id="splash"
+class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-all duration-700 ease-in-out"
 >
-  <img
-    src="img/logo2.png"
-    alt="Logo"
-    id="splashLogo"
-    class="w-[90vw] max-w-[500px] md:max-w-[600px] lg:max-w-[700px] h-auto transition-transform duration-700 ease-in-out"
-  />
+<img
+  src="img/logo2.png"
+  alt="Logo"
+  id="splashLogo"
+  class="w-[90vw] max-w-[500px] md:max-w-[600px] lg:max-w-[700px] h-auto transition-transform duration-700 ease-in-out"
+/>
 </div>
 <!-- Splash Screen End -->
 
 <!-- Splash Screen Script -->
 <script>
-  window.addEventListener("load", () => {
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const splashLogo = document.getElementById("splashLogo");
+    splashLogo.style.transform = "scale(0.8)";
+    splashLogo.style.opacity = "0";
+
+    const splash = document.getElementById("splash");
+    splash.style.opacity = "0";
+
     setTimeout(() => {
-      const splashLogo = document.getElementById("splashLogo");
-      splashLogo.style.transform = "scale(0.8)";
-      splashLogo.style.opacity = "0";
-
-      const splash = document.getElementById("splash");
-      splash.style.opacity = "0";
-
-      setTimeout(() => {
-        splash.style.display = "none";
-        const mainContent = document.getElementById("mainContent");
-        mainContent.classList.remove("opacity-0");
-      }, 700); // animation match
-    }, 1000); // show for 2 sec
-  });
+      splash.style.display = "none";
+      const mainContent = document.getElementById("mainContent");
+      mainContent.classList.remove("opacity-0");
+    }, 700); // animation match
+  }, 1000); // show for 2 sec
+});
 </script>
 
 <!-- Website Main Content -->
 <div
-  id="mainContent"
-  class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
+id="mainContent"
+class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
 >
-  <!-- Website content goes here -->
-
-
-
+<!-- Website content goes here -->
 
 
             <!-- Top Bar Start -->
