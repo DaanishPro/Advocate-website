@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>ZA LEGAL ASSOCIATES</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Law Firm Website Template" name="keywords">
-        <meta content="Law Firm Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>ZA LEGAL ASSOCIATES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Law Firm Website Template" name="keywords">
+    <meta content="Law Firm Website Template" name="description">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
-        
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <body>
- <!-- Splash Screen Start -->
-<div
-id="splash"
-class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-all duration-700 ease-in-out"
->
-<img
-  src="img/latestlogo.jpeg"
-  alt="Logo"
-  id="splashLogo"
-  class="w-[90vw] max-w-[500px] md:max-w-[600px] lg:max-w-[700px] h-auto transition-transform duration-700 ease-in-out"
-/>
-</div>
-<!-- Splash Screen End -->
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
 
-<!-- Splash Screen Script -->
-<script>
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    const splashLogo = document.getElementById("splashLogo");
-    splashLogo.style.transform = "scale(0.8)";
-    splashLogo.style.opacity = "0";
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    const splash = document.getElementById("splash");
-    splash.style.opacity = "0";
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    setTimeout(() => {
-      splash.style.display = "none";
-      const mainContent = document.getElementById("mainContent");
-      mainContent.classList.remove("opacity-0");
-    }, 700); // animation match
-  }, 1000); // show for 2 sec
-});
-</script>
+<body>
+    <!-- Splash Screen Start -->
+    <div id="splash"
+        class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-all duration-700 ease-in-out">
+        <img src="img/latestlogo.jpeg" alt="Logo" id="splashLogo"
+            class="w-[90vw] max-w-[500px] md:max-w-[600px] lg:max-w-[700px] h-auto transition-transform duration-700 ease-in-out" />
+    </div>
+    <!-- Splash Screen End -->
 
-<!-- Website Main Content -->
-<div
-id="mainContent"
-class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
->
-<!-- Website content goes here -->
+    <!-- Splash Screen Script -->
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                const splashLogo = document.getElementById("splashLogo");
+                splashLogo.style.transform = "scale(0.8)";
+                splashLogo.style.opacity = "0";
+
+                const splash = document.getElementById("splash");
+                splash.style.opacity = "0";
+
+                setTimeout(() => {
+                    splash.style.display = "none";
+                    const mainContent = document.getElementById("mainContent");
+                    mainContent.classList.remove("opacity-0");
+                }, 700); // animation match
+            }, 1000); // show for 2 sec
+        });
+    </script>
+
+    <!-- Website Main Content -->
+    <div id="mainContent" class="wrapper opacity-0 transition-opacity duration-700 ease-in-out">
+        <!-- Website content goes here -->
 
 
-            <!-- Top Bar Start -->
+        <!-- Top Bar Start -->
 
-            <div class="top-bar">
-                <div class="container-fluid h-100 px-3">
-                    <div class="row align-items-center h-100 d-flex justify-content-between">
-                        <!-- Logo and Company Name -->
-                        <div class="col-auto h-100">
-                            <div class="logo d-flex align-items-center h-100">
-                                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; height: 100%;  ">
-                                    <img src="img/latestlogo.jpeg" alt="Logo" style="height: 200%; width: auto; object-fit: contain; margin-right: 10px;">
-                                    <div>
-                                        <h1 style="margin: 0; font-size: 42px; line-height: 1; color: #d4af7f; font-family:  Arial, Helvetica, sans-serif;font-style: normal ;  ">ZA</h1>
-                                        <span style="display: block; font-size: 16px; color: #d4af7f;    ">Legal Associates</span>
-                                    </div>
-                                </a>
+        <div class="top-bar">
+            <div class="container-fluid h-100 px-3">
+                <div class="row align-items-center h-100 d-flex justify-content-between">
+                    <!-- Logo and Company Name -->
+                    <div class="col-auto h-100">
+                        <div class="logo d-flex align-items-center h-100">
+                            <a href="index.html"
+                                style="text-decoration: none; display: flex; align-items: center; height: 100%;  ">
+                                <img src="img/latestlogo.jpeg" alt="Logo"
+                                    style="height: 200%; width: auto; object-fit: contain; margin-right: 10px;">
+                                <div>
+                                    <h1
+                                        style="margin: 0; font-size: 42px; line-height: 1; color: #d4af7f; font-family:  Arial, Helvetica, sans-serif;font-style: normal ;  ">
+                                        ZA</h1>
+                                    <span style="display: block; font-size: 16px; color: #d4af7f;    ">Legal
+                                        Associates</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Desktop: Timing + Social | Mobile: Appointment button -->
+                    <div class="col-auto h-100 d-flex align-items-center">
+                        <!-- Desktop view -->
+                        <div class="top-bar-right d-flex align-items-center h-100">
+                            <div class="text me-4">
+                                <h2>8:00 - 9:00</h2>
+                                <p>Opening Hour Mon - Fri</p>
+                            </div>
+                            <div class="text me-4">
+                                <h2>+022 44555454</h2>
+                                <p>Call Us For Free Consultation</p>
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
-            
-                        <!-- Desktop: Timing + Social | Mobile: Appointment button -->
-                        <div class="col-auto h-100 d-flex align-items-center">
-                            <!-- Desktop view -->
-                            <div class="top-bar-right d-flex align-items-center h-100">
-                                <div class="text me-4">
-                                    <h2>8:00 - 9:00</h2>
-                                    <p>Opening Hour Mon - Fri</p>
-                                </div>
-                                <div class="text me-4">
-                                    <h2>+022 44555454</h2>
-                                    <p>Call Us For Free Consultation</p>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-            
-                            <!-- Mobile view button -->
-                            
-                        </div>
+
+                        <!-- Mobile view button -->
+
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
-            <!-- Top Bar End -->
-            
+        <!-- Top Bar End -->
 
 
 
-   
-         <!-- Navbar & Appointment Modal starts -->
+
+
+        <!-- Navbar & Appointment Modal starts -->
 
 
 
 
         <!--Navbar starts-->
-         <nav class="bg-[#121518] relative z-50">
+        <nav class="bg-[#121518] relative z-50">
             <div class="max-w-[1440px] mx-auto px-[20px] lg:px-[60px] py-2 flex items-center justify-between">
                 <div class="lg:hidden">
                     <span class="text-white font-bold text-xl">MENU</span>
@@ -139,47 +138,56 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                     <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
                 </div>
                 <div class="hidden lg:block">
-                    <button id="appointment-btn" class="text-white border-2 border-[#aa9166] px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
+                    <button id="appointment-btn"
+                        class="text-white border-2 border-[#aa9166] px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
                         Get Appointment
                     </button>
                 </div>
                 <div class="lg:hidden">
-                    <button id="menu-toggle" class="text-white border border-gray-500 p-2 rounded-md hover:bg-[#1f2326] transition duration-200">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <button id="menu-toggle"
+                        class="text-white border border-gray-500 p-2 rounded-md hover:bg-[#1f2326] transition duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4" style="background-color: #121518;">
-                <div class="flex flex-col space-y-2 uppercase text-white text-sm font-medium py-4" id="mobile-nav-links">
+            <div id="mobile-menu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4"
+                style="background-color: #121518;">
+                <div class="flex flex-col space-y-2 uppercase text-white text-sm font-medium py-4"
+                    id="mobile-nav-links">
                     <a href="index.html" class="nav-link hover:text-[#aa9166] transition duration-200">Home</a>
                     <a href="about.html" class="nav-link hover:text-[#aa9166] transition duration-200">About</a>
                     <a href="service.html" class="nav-link hover:text-[#aa9166] transition duration-200">Practice</a>
                     <a href="team.html" class="nav-link hover:text-[#aa9166] transition duration-200">Attorneys</a>
                     <a href="contact.html" class="nav-link hover:text-[#aa9166] transition duration-200">Contact</a>
-                    <button id="mobile-appointment-btn" class="text-white border-2 border-[#aa9166] text-center px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
+                    <button id="mobile-appointment-btn"
+                        class="text-white border-2 border-[#aa9166] text-center px-4 py-2 text-sm hover:bg-[#aa9166] transition duration-200">
                         Get Appointment
                     </button>
                 </div>
             </div>
-        </nav>    
+        </nav>
         <!-- Navbar end -->
-        
+
         <!-- Appointment Form starts -->
-        <div id="appointment-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 overflow-y-auto px-4 py-10">
+        <div id="appointment-modal"
+            class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 overflow-y-auto px-4 py-10">
             <div class="bg-white rounded-lg w-full max-w-md mx-auto flex flex-col max-h-[90vh]">
                 <!-- Modal Header -->
                 <div class="flex justify-between items-center bg-[#121518] p-4">
-                    <h3 style="color:#d4af7f; font-weight: semibold; font-size:x-large; font-family: Arial, Helvetica, sans-serif;font-style: normal;">Fix an Appointment</h3>
+                    <h3
+                        style="color:#d4af7f; font-weight: semibold; font-size:x-large; font-family: Arial, Helvetica, sans-serif;font-style: normal;">
+                        Fix an Appointment</h3>
                     <button id="close-modal" class="text-white text-2xl">&times;</button>
                 </div>
-        
+
                 <!-- Modal Scrollable Body -->
                 <div class="overflow-y-auto p-6">
                     <!-- Message Container -->
                     <div id="form-message" class="hidden mb-4 p-4 rounded-md text-center"></div>
-                    
+
                     <form id="appointment-form">
                         <div class="grid grid-cols-2 gap-4 mb-4">
                             <div>
@@ -219,11 +227,14 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                             <label class="block text-gray-700 mb-2">Captcha</label>
                             <div class="flex items-center space-x-3">
                                 <canvas id="captchaCanvas" width="100" height="40" class="border"></canvas>
-                                <button type="button" id="refreshCaptcha" class="text-sm text-blue-500 hover:underline">Refresh</button>
+                                <button type="button" id="refreshCaptcha"
+                                    class="text-sm text-blue-500 hover:underline">Refresh</button>
                             </div>
-                            <input type="text" id="captchaInput" name="captcha" required class="mt-2 w-full px-3 py-2 border rounded" placeholder="Enter captcha">
+                            <input type="text" id="captchaInput" name="captcha" required
+                                class="mt-2 w-full px-3 py-2 border rounded" placeholder="Enter captcha">
                         </div>
-                        <button type="submit" class="w-full bg-[#aa9166] text-white py-2 rounded hover:bg-[#9a8156] transition duration-200">
+                        <button type="submit"
+                            class="w-full bg-[#aa9166] text-white py-2 rounded hover:bg-[#9a8156] transition duration-200">
                             Submit
                         </button>
                     </form>
@@ -232,7 +243,9 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                         <p class="mb-4">* Min. Consultation Fees Rs.5,000/-</p>
                         <!--working hours  card starts-->
                         <div style="padding-top: 0.5rem; background-color: #121518; padding-left: 0.25rem;">
-                            <h4 style="font-size:x-large; color: #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal;">Working Hours</h4>
+                            <h4
+                                style="font-size:x-large; color: #d4af7f; font-family: Arial, Helvetica, sans-serif; font-style: normal;">
+                                Working Hours</h4>
                             <div class="flex justify-between mb-1 mt-4 text-white">
                                 <span>Monday - Friday</span>
                                 <span class="pr-1">10.00 am - 09.00 pm</span>
@@ -249,7 +262,7 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
             </div>
         </div>
         <!--Appointment form ends-->
-        
+
         <!-- Firebase & Script Logic starts -->
         <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
@@ -265,18 +278,18 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                 appId: "1:822900937988:web:e95b54220902c12fec6c51",
                 measurementId: "G-47KR49G7KX"
             };
-        
+
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             const database = firebase.database();
-        
+
             // Mobile Menu Toggle Fix
             const menuToggle = document.getElementById("menu-toggle");
             const mobileMenu = document.getElementById("mobile-menu");
-            
-            menuToggle.addEventListener("click", function() {
+
+            menuToggle.addEventListener("click", function () {
                 const isOpen = mobileMenu.classList.contains("max-h-[500px]");
-                
+
                 if (isOpen) {
                     mobileMenu.classList.remove("max-h-[500px]");
                     mobileMenu.classList.add("max-h-0");
@@ -285,7 +298,7 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                     mobileMenu.classList.add("max-h-[500px]");
                 }
             });
-        
+
             // Generate Captcha
             function generateCaptcha() {
                 const ctx = document.getElementById("captchaCanvas").getContext("2d");
@@ -295,72 +308,71 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                 ctx.fillStyle = "#333";
                 ctx.fillText(captchaValue, 10, 28);
             }
-        
+
             // Show Message Function (Improved)
             function showMessage(type, title, detail = "") {
                 const formMessage = document.getElementById("form-message");
-                formMessage.className = `mb-4 p-4 rounded-md text-center font-medium ${
-                    type === 'success' 
-                        ? 'bg-green-100 border-l-4 border-green-500 text-green-700' 
+                formMessage.className = `mb-4 p-4 rounded-md text-center font-medium ${type === 'success'
+                        ? 'bg-green-100 border-l-4 border-green-500 text-green-700'
                         : 'bg-red-100 border-l-4 border-red-500 text-red-700'
-                }`;
-                
+                    }`;
+
                 formMessage.innerHTML = `
                     <p class="font-bold">${title}</p>
                     ${detail ? `<p class="text-sm mt-1">${detail}</p>` : ''}
                 `;
-                
+
                 formMessage.classList.remove('hidden');
                 formMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 setTimeout(() => formMessage.classList.add('hidden'), 5000);
             }
-        
+
             // Validate Date and Time
             function validateDateTime(selectedDate, selectedTime) {
                 const now = new Date();
                 const today = new Date(now.toDateString());
                 const selected = new Date(selectedDate);
-                
+
                 // Date validation
                 if (selected < today) {
                     showMessage('error', 'Invalid Date', 'Please select today\'s date or a future date.');
                     return false;
                 }
-                
+
                 // Time validation only for current date
                 if (selected.getTime() === today.getTime()) {
                     const timeParts = selectedTime.split(' ');
                     let [hours, minutes] = timeParts[0].split(':').map(Number);
                     const period = timeParts[1];
-                    
+
                     // Convert to 24-hour format
                     if (period === 'PM' && hours !== 12) hours += 12;
                     if (period === 'AM' && hours === 12) hours = 0;
-                    
+
                     // Create comparison date
                     const selectedDateTime = new Date(selected);
                     selectedDateTime.setHours(hours, minutes, 0, 0);
-                    
+
                     if (selectedDateTime < now) {
                         showMessage('error', 'Invalid Time', 'The selected time has already passed. Please choose a future time.');
                         return false;
                     }
                 }
-                
+
                 return true;
             }
-        
+
             // Form Submission
-            document.getElementById("appointment-form").addEventListener("submit", function(e) {
+            document.getElementById("appointment-form").addEventListener("submit", function (e) {
                 e.preventDefault();
                 const formMessage = document.getElementById("form-message");
                 formMessage.classList.add('hidden');
-                
+
                 // Validate Date and Time
                 if (!validateDateTime(this.date.value, this.time.value)) {
                     return;
                 }
-                
+
                 // Validate Captcha
                 const userCaptcha = document.getElementById("captchaInput").value.toUpperCase();
                 if (userCaptcha !== captchaValue) {
@@ -368,7 +380,7 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                     generateCaptcha();
                     return;
                 }
-                
+
                 // Submit to Firebase
                 database.ref('appointments').push({
                     date: this.date.value,
@@ -387,20 +399,20 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                     showMessage('error', 'Submission Failed', 'Something went wrong. Please try again.');
                 });
             });
-        
+
             // Initialize
             window.addEventListener('DOMContentLoaded', () => {
                 generateCaptcha();
                 const today = new Date().toISOString().split('T')[0];
                 document.querySelector('input[type="date"]').min = today;
-                
+
                 // Set up event listeners
                 document.getElementById("appointment-btn").addEventListener('click', toggleModal);
                 document.getElementById("mobile-appointment-btn").addEventListener('click', toggleModal);
                 document.getElementById("close-modal").addEventListener('click', toggleModal);
                 document.getElementById("refreshCaptcha").addEventListener('click', generateCaptcha);
             });
-        
+
             function toggleModal() {
                 const modal = document.getElementById("appointment-modal");
                 modal.classList.toggle('hidden');
@@ -410,535 +422,563 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
             }
         </script>
         <!-- Firebase & Script Logic ends -->
-      
-  
-     
+
+
+
 
         <!-- Navbar and appointment model End -->
-     
-        
 
-            <!-- Carousel Start -->
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/highcourt.jpg" alt="Carousel Image">
-                        <div class="carousel-caption">
-                            <h1 class="animated fadeInLeft">We fight for your justice</h1>
-                        </div>
+
+
+        <!-- Carousel Start -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/highcourt.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">We fight for your justice</h1>
                     </div>
+                </div>
 
-                    <div class="carousel-item">
-                        <img src="img/cst.jpg" alt="Carousel Image">
-                        <div class="carousel-caption">
-                            <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
-                        
-                        </div>
+                <div class="carousel-item">
+                    <img src="img/cst.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
+
                     </div>
+                </div>
 
-                    <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" alt="Carousel Image">
-                        <div class="carousel-caption">
-                            <h1 class="animated fadeInLeft">We fight for your privilege</h1>
-                           <!-- <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
+                <div class="carousel-item">
+                    <img src="img/carousel-3.jpg" alt="Carousel Image">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInLeft">We fight for your privilege</h1>
+                        <!-- <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
                             <a class="btn animated fadeInUp" href="#">Get free consultation</a> -->
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- Carousel End -->
-            
-            
-            <!-- Top Feature Start-->
-            <div class="feature-top">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-check-circle"></i>
-                                <h3>Legal</h3>
-                                <p>Govt Approved</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="fa fa-user-tie"></i>
-                                <h3>Attorneys</h3>
-                                <p>Expert Attorneys</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-thumbs-up"></i>
-                                <h3>Success</h3>
-                                <p>99.99% Case Won</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature-item">
-                                <i class="far fa-handshake"></i>
-                                <h3>Support</h3>
-                                <p>Quick Support</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Top Feature End-->
-            
-            
-            <!-- About Start -->
-            <div class="about">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                <img src="img/about.jpg" alt="Image" >
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-6">
-                            <div class="section-header">
-                                <h2>Learn About Us</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                  <p class="font-bold ">  ZA LEGAL ASSOCIATES </p> Is a formidable legal powerhouse, renowned for its unwavering dedication to delivering righteousness and excellence in the legal fraternity. With a strong presence in Mumbai/Thane, we have established ourselves as the premier destination for individuals and organizations seeking exceptional legal representation.                               
-                                </p>
-                                <p>
-                                    Our firm shines as a beacon of hope, trust, and excellence in Mumbai's legal landscape, providing comprehensive legal services with: 
-                                </p>
-                                <ul class="list-disc list-inside space-y-2 mb-6">
-                                    <li>In-depth knowledge of the law</li>
-                                    <li>Exceptional advocacy skills</li>
-                                    <li>Unshakeable integrity</li>
-                                    <li>Unwavering dedication to clients</li>
-                                    <li>Strategic thinking and innovative solutions</li>
-                                </ul>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- About End -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel End -->
 
 
-            <!-- Service Start -->
-            <div class="service">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Our Practices Areas</h2>
+        <!-- Top Feature Start-->
+        <div class="feature-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-check-circle"></i>
+                            <h3>Legal</h3>
+                            <p>Govt Approved</p>
+                        </div>
                     </div>
-                    <div class="row d-flex flex-wrap">
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/civil.png" alt="Civil Law Icon" class="image" />
-                                </div>
-                                <h3>Civil Law</h3>
-                                <p>
-                                    Proficiency in handling disputes related to property, contracts, and personal rights with strategic solutions.
-                                </p>
-                            </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-user-tie"></i>
+                            <h3>Attorneys</h3>
+                            <p>Expert Attorneys</p>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <h3>Family Law</h3>
-                                <p>
-                                    Compassionate approach to family disputes, matrimonial matters, child custody, and maintenance cases.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-thumbs-up"></i>
+                            <h3>Success</h3>
+                            <p>99.99% Case Won</p>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/divorce.png" alt="Divorce Litigation Icon" class="image" />
-                                </div>
-                                <h3>Divorce Litigation</h3>
-                                <p>
-                                    Advises and litigation relating to divorce including counseling, mutual consent divorce, and contested divorce matters.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/company.png" alt="Company Litigation Icon" class="image" />
-                                </div>
-                                <h3>Company Litigation</h3>
-                                <p>
-                                    Formation and registration of companies under Companies Act, corporate disputes, and compliance matters.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/criminal.png" alt="Criminal Litigation Icon" class="image" />
-                                </div>
-                                <h3>Criminal Litigation</h3>
-                                <p>
-                                    Litigation under various provisions of Indian Penal Code, Money Laundering Act, and other criminal statutes.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/cooperative.png" alt="Cooperative & Society Litigation Icon" class="image" />
-                                </div>
-                                <h3>Cooperative & Society</h3>
-                                <p>
-                                    Advises and litigation relating to Cooperative Housing Society laws, disputes, and governance matters.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/corporate.png" alt="Corporate Litigation Icon" class="image" />
-                                </div>
-                                <h3>Corporate Law</h3>
-                                <p>
-                                    Specialized knowledge in corporate litigation, mergers, acquisitions, and corporate governance matters. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-4 d-flex">
-                            <div class="service-item h-100">
-                                <div class="service-icon">
-                                    <img src="img/highcourt.png" alt="High Court Matters Icon" class="image" />
-                                </div>
-                                <h3>High Court Matters</h3>
-                                <p>
-                                    Proven track record of success in High Court matters with exceptional advocacy and legal strategy.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="far fa-handshake"></i>
+                            <h3>Support</h3>
+                            <p>Quick Support</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Service End -->
-            
-            
-            <!-- Feature Start -->
-            <div class="feature">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="section-header">
-                                <h2>Why Choose Us</h2>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-gavel"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Best law practices</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-balance-scale"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Efficiency & Trust</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-center feature-item">
-                                <div class="col-5">
-                                    <div class="feature-icon">
-                                        <i class="far fa-smile"></i>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <h3>Results you deserve</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                                    </p>
-                                </div>
-                            </div>
+        </div>
+        <!-- Top Feature End-->
+
+
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="Image">
                         </div>
-                        <div class="col-md-5">
-                            <div class="feature-img">
-                                <img src="img/feature.jpg" alt="Feature">
-                            </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="section-header">
+                            <h2>Learn About Us</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                            <p class="font-bold "> ZA LEGAL ASSOCIATES </p> Is a formidable legal powerhouse, renowned
+                            for its unwavering dedication to delivering righteousness and excellence in the legal
+                            fraternity. With a strong presence in Mumbai/Thane, we have established ourselves as the
+                            premier destination for individuals and organizations seeking exceptional legal
+                            representation.
+                            </p>
+                            <p>
+                                Our firm shines as a beacon of hope, trust, and excellence in Mumbai's legal landscape,
+                                providing comprehensive legal services with:
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 mb-6">
+                                <li>In-depth knowledge of the law</li>
+                                <li>Exceptional advocacy skills</li>
+                                <li>Unshakeable integrity</li>
+                                <li>Unwavering dedication to clients</li>
+                                <li>Strategic thinking and innovative solutions</li>
+                            </ul>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Feature End -->
-            
-            
-            <!-- Team Start -->
-            <div class="team py-12">
-                <div class="container mx-auto px-4">
-                    <div class="section-header text-center mb-12">
-                        <h2 class="text-3xl font-bold text-gray-800">Meet Our Expert Attorneys</h2>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Practices Areas</h2>
+                </div>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/civil.png" alt="Civil Law Icon" class="image" />
+                            </div>
+                            <h3>Civil Law</h3>
+                            <p>
+                                Proficiency in handling disputes related to property, contracts, and personal rights
+                                with strategic solutions.
+                            </p>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 " id="team-container">
-                        <!-- Advocate Zubair Zariwala -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('zubair')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/zubair.jpeg" alt="Adv. Zubair Zariwala" class="w-full h-full object-cover">
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <i class="fa fa-users"></i>
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. ZUBAIR ZARIWALA</h2>
-                                <p class="text-gray-600">20+ years experience</p>
-                            </div>
+                            <h3>Family Law</h3>
+                            <p>
+                                Compassionate approach to family disputes, matrimonial matters, child custody, and
+                                maintenance cases.
+                            </p>
                         </div>
-                        
-                        <!-- Advocate Kavita Anchan -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('kavita')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/kavita.jpeg" alt="Adv. Kavita Anchan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/divorce.png" alt="Divorce Litigation Icon" class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. KAVITA ANCHAN</h2>
-                                <p class="text-gray-600">17+ years experience</p>
-                            </div>
+                            <h3>Divorce Litigation</h3>
+                            <p>
+                                Advises and litigation relating to divorce including counseling, mutual consent divorce,
+                                and contested divorce matters.
+                            </p>
                         </div>
-                        
-                        <!-- Dr. (Adv.) Priya Borgaonkar -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('priya')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/team-3.jpg" alt="Dr. (Adv.) Priya Borgaonkar" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/company.png" alt="Company Litigation Icon" class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-[0.9rem] font-bold font-['Libre_Baskerville']">DR. (ADV.) PRIYA BORGAONKAR</h2>
-                                <p class="text-gray-600">22+ years experience</p>
-                            </div>
+                            <h3>Company Litigation</h3>
+                            <p>
+                                Formation and registration of companies under Companies Act, corporate disputes, and
+                                compliance matters.
+                            </p>
                         </div>
-                        
-                        <!-- Adv. Sunil Bhandare -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('sunil')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/team-4.jpg" alt="Adv. Sunil Bhandare" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/criminal.png" alt="Criminal Litigation Icon" class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. SUNIL BHANDARE</h2>
-                                <p class="text-gray-600">20+ years experience</p>
-                            </div>
+                            <h3>Criminal Litigation</h3>
+                            <p>
+                                Litigation under various provisions of Indian Penal Code, Money Laundering Act, and
+                                other criminal statutes.
+                            </p>
                         </div>
-                        
-                        <!-- Adv. Khanjan Joshi -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('khanjan')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/team-1.jpg" alt="Adv. Khanjan Joshi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/cooperative.png" alt="Cooperative & Society Litigation Icon"
+                                    class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. KHANJAN JOSHI</h2>
-                                <p class="text-gray-600">17+ years experience</p>
-                            </div>
+                            <h3>Cooperative & Society</h3>
+                            <p>
+                                Advises and litigation relating to Cooperative Housing Society laws, disputes, and
+                                governance matters.
+                            </p>
                         </div>
-                        
-                        <!-- Adv. Vishal Dhende -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('vishal')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/team-1.jpg" alt="Adv. Vishal Dhende" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/corporate.png" alt="Corporate Litigation Icon" class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. VISHAL DHENDE</h2>
-                                <p class="text-gray-600">12+ years experience</p>
-                            </div>
+                            <h3>Corporate Law</h3>
+                            <p>
+                                Specialized knowledge in corporate litigation, mergers, acquisitions, and corporate
+                                governance matters.
+                            </p>
                         </div>
-                        
-                        <!-- Adv. Akhilesh Deshmukh -->
-                        <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" onclick="showAdvocateCard('akhilesh')">
-                            <div class="w-full aspect-[3/4] overflow-hidden">
-                                <img src="img/team-1.jpg" alt="Adv. Akhilesh Deshmukh" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                        <div class="service-item h-100">
+                            <div class="service-icon">
+                                <img src="img/highcourt.png" alt="High Court Matters Icon" class="image" />
                             </div>
-                            <div class="team-text text-center p-4">
-                                <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. AKHILESH DESHMUKH</h2>
-                                <p class="text-gray-600">8+ years experience</p>
-                            </div>
+                            <h3>High Court Matters</h3>
+                            <p>
+                                Proven track record of success in High Court matters with exceptional advocacy and legal
+                                strategy.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Popup Card for Advocate Info -->
-            <div id="advocate-info-card" class="fixed hidden z-50 bg-black text-white p-6 rounded-lg w-11/12 max-w-md transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 scale-95 opacity-0">
-                <span onclick="hideAdvocateCard()" class="absolute top-3 right-4 cursor-pointer text-2xl" style="color: #aa9166;">&times;</span>
-                <div id="advocate-info-content" class="space-y-4"></div>
+        </div>
+
+        <!-- Service End -->
+
+
+        <!-- Feature Start -->
+        <div class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="section-header">
+                            <h2>Why Choose Us</h2>
+                        </div>
+                        <div class="row align-items-center feature-item">
+                            <div class="col-5">
+                                <div class="feature-icon">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <h3>Best law practices</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
+                                    ornare velit non vulputate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center feature-item">
+                            <div class="col-5">
+                                <div class="feature-icon">
+                                    <i class="fa fa-balance-scale"></i>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <h3>Efficiency & Trust</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
+                                    ornare velit non vulputate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center feature-item">
+                            <div class="col-5">
+                                <div class="feature-icon">
+                                    <i class="far fa-smile"></i>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <h3>Results you deserve</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
+                                    ornare velit non vulputate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="feature-img">
+                            <img src="img/feature.jpg" alt="Feature">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <script>
-                // Advocate information data
-                const advocates = {
-                    zubair: {
-                        name: "ADV. ZUBAIR ZARIWALA",
-                        experience: "20+ years experience",
-                        description: "Specialized in property law, arbitration, and documentation. Consultant to promoters, builders & developers.",
-                        expertise: [
-                            "Property development/re-development",
-                            "Arbitration & Conciliation",
-                            "Corporate Matters",
-                            "Banking matters"
-                        ]
-                    },
-                    kavita: {
-                        name: "ADV. KAVITA ANCHAN",
-                        experience: "17+ years experience",
-                        description: "Leading litigation lawyer appearing before High Court at Bombay and Nagpur, City Civil Courts.",
-                        expertise: [
-                            "Labour Law",
-                            "Service matters",
-                            "Civil litigation",
-                            "Criminal law"
-                        ]
-                    },
-                    priya: {
-                        name: "DR. (ADV.) PRIYA BORGAONKAR",
-                        experience: "22+ years experience",
-                        description: "Preeminent litigation lawyer excelling in both civil and criminal matters.",
-                        expertise: [
-                            "Civil litigation",
-                            "Criminal law",
-                            "Labour law",
-                            "Industrial law"
-                        ]
-                    },
-                    sunil: {
-                        name: "ADV. SUNIL BHANDARE",
-                        experience: "20+ years experience",
-                        description: "Distinguished advocate with extensive experience in civil litigation and corporate law.",
-                        expertise: [
-                            "Civil litigation",
-                            "Corporate law",
-                            "Contract disputes",
-                            "Consumer law"
-                        ]
-                    },
-                    khanjan: {
-                        name: "ADV. KHANJAN JOSHI",
-                        experience: "17+ years experience",
-                        description: "Specialized in Motor Accident Claim Tribunal matters with impressive track record.",
-                        expertise: [
-                            "Criminal law and procedure",
-                            "Negotiation and mediation",
-                            "Strategic problem-solving",
-                            "Motor Accident Claims"
-                        ]
-                    },
-                    vishal: {
-                        name: "ADV. VISHAL DHENDE",
-                        experience: "12+ years experience",
-                        description: "Leading litigation lawyer excelling in Motor Accident Claim Tribunal matters.",
-                        expertise: [
-                            "Motor Accident Claims",
-                            "Civil litigation",
-                            "Arbitration matters"
-                        ]
-                    },
-                    akhilesh: {
-                        name: "ADV. AKHILESH DESHMUKH",
-                        experience: "8+ years experience",
-                        description: "Specializing in tax matters and civil cases with expertise in indirect taxation.",
-                        expertise: [
-                            "Taxation laws",
-                            "Civil litigation",
-                            "Corporate laws"
-                        ]
-                    }
-                };
-            
-                function showAdvocateCard(advocateId) {
-                    const advocate = advocates[advocateId];
-                    const card = document.getElementById('advocate-info-card');
-                    const content = document.getElementById('advocate-info-content');
-                    
-                    // Build the content
-                    let html = `
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- Team Start -->
+        <div class="team py-12">
+            <div class="container mx-auto px-4">
+                <div class="section-header text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Panels</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 " id="team-container">
+                    <!-- Advocate Zubair Zariwala -->
+                    <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('zubair')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/medzeal.jpeg.jpeg" alt="Adv. Zubair Zariwala" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">MEDZEAL</h2>
+                            <p class="text-gray-600">20+ years experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Advocate Kavita Anchan -->
+                    <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('kavita')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/medora2.png" alt="Adv. Kavita Anchan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">MEDORA</h2>
+                            <p class="text-gray-600">17+ years experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Dr. (Adv.) Priya Borgaonkar -->
+                    <!-- <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('priya')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/whitemint2.png" alt="Dr. (Adv.) Priya Borgaonkar"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-[0.9rem] font-bold font-['Libre_Baskerville']">DR. (ADV.) PRIYA BORGAONKAR
+                            </h2>
+                            <p class="text-gray-600">22+ years experience</p>
+                        </div>
+                    </div> -->
+
+                    <!-- Adv. Sunil Bhandare -->
+                    <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('sunil')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/whitemint2.png" alt="Adv. Sunil Bhandare" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">WHITEMINT</h2>
+                            <p class="text-gray-600">20+ years experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Adv. Khanjan Joshi -->
+                    <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('khanjan')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/fam2.png" alt="Adv. Khanjan Joshi" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">FAM CORPORATION</h2>
+                            <p class="text-gray-600">17+ years experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Adv. Vishal Dhende -->
+                    <!-- <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('vishal')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/team-1.jpg" alt="Adv. Vishal Dhende" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. VISHAL DHENDE</h2>
+                            <p class="text-gray-600">12+ years experience</p>
+                        </div>
+                    </div> -->
+
+                    <!-- Adv. Akhilesh Deshmukh -->
+                    <!-- <div class="flex flex-col bg-white rounded-lg overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                        onclick="showAdvocateCard('akhilesh')">
+                        <div class="w-full aspect-[3/4] overflow-hidden">
+                            <img src="img/team-1.jpg" alt="Adv. Akhilesh Deshmukh" class="w-full h-full object-cover">
+                        </div>
+                        <div class="team-text text-center p-4">
+                            <h2 class="text-xl font-bold font-['Libre_Baskerville']">ADV. AKHILESH DESHMUKH</h2>
+                            <p class="text-gray-600">8+ years experience</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup Card for Advocate Info -->
+        <div id="advocate-info-card"
+            class="fixed hidden z-50 bg-black text-white p-6 rounded-lg w-11/12 max-w-md transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 scale-95 opacity-0">
+            <span onclick="hideAdvocateCard()" class="absolute top-3 right-4 cursor-pointer text-2xl"
+                style="color: #aa9166;">&times;</span>
+            <div id="advocate-info-content" class="space-y-4"></div>
+        </div>
+
+        <script>
+            // Advocate information data
+            const advocates = {
+                zubair: {
+                    name: "ADV. ZUBAIR ZARIWALA",
+                    experience: "20+ years experience",
+                    description: "Specialized in property law, arbitration, and documentation. Consultant to promoters, builders & developers.",
+                    expertise: [
+                        "Property development/re-development",
+                        "Arbitration & Conciliation",
+                        "Corporate Matters",
+                        "Banking matters"
+                    ]
+                },
+                kavita: {
+                    name: "ADV. KAVITA ANCHAN",
+                    experience: "17+ years experience",
+                    description: "Leading litigation lawyer appearing before High Court at Bombay and Nagpur, City Civil Courts.",
+                    expertise: [
+                        "Labour Law",
+                        "Service matters",
+                        "Civil litigation",
+                        "Criminal law"
+                    ]
+                },
+                priya: {
+                    name: "DR. (ADV.) PRIYA BORGAONKAR",
+                    experience: "22+ years experience",
+                    description: "Preeminent litigation lawyer excelling in both civil and criminal matters.",
+                    expertise: [
+                        "Civil litigation",
+                        "Criminal law",
+                        "Labour law",
+                        "Industrial law"
+                    ]
+                },
+                sunil: {
+                    name: "ADV. SUNIL BHANDARE",
+                    experience: "20+ years experience",
+                    description: "Distinguished advocate with extensive experience in civil litigation and corporate law.",
+                    expertise: [
+                        "Civil litigation",
+                        "Corporate law",
+                        "Contract disputes",
+                        "Consumer law"
+                    ]
+                },
+                khanjan: {
+                    name: "ADV. KHANJAN JOSHI",
+                    experience: "17+ years experience",
+                    description: "Specialized in Motor Accident Claim Tribunal matters with impressive track record.",
+                    expertise: [
+                        "Criminal law and procedure",
+                        "Negotiation and mediation",
+                        "Strategic problem-solving",
+                        "Motor Accident Claims"
+                    ]
+                },
+                vishal: {
+                    name: "ADV. VISHAL DHENDE",
+                    experience: "12+ years experience",
+                    description: "Leading litigation lawyer excelling in Motor Accident Claim Tribunal matters.",
+                    expertise: [
+                        "Motor Accident Claims",
+                        "Civil litigation",
+                        "Arbitration matters"
+                    ]
+                },
+                akhilesh: {
+                    name: "ADV. AKHILESH DESHMUKH",
+                    experience: "8+ years experience",
+                    description: "Specializing in tax matters and civil cases with expertise in indirect taxation.",
+                    expertise: [
+                        "Taxation laws",
+                        "Civil litigation",
+                        "Corporate laws"
+                    ]
+                }
+            };
+
+            function showAdvocateCard(advocateId) {
+                const advocate = advocates[advocateId];
+                const card = document.getElementById('advocate-info-card');
+                const content = document.getElementById('advocate-info-content');
+
+                // Build the content
+                let html = `
                         <h2 class="text-xl font-bold font-['Libre_Baskerville'] mb-2" style="color: #aa9166;">${advocate.name}</h2>
                         <p class="mb-4" style="color: #999999;">${advocate.experience}</p>
                         <p class="mb-4" style="color: #999999;">${advocate.description}</p>
                         <h3 class="font-bold text-lg mb-2" style="color: #aa9166;">Expertise:</h3>
                         <ul class="list-disc pl-5 space-y-1" style="color: #999999;">`;
-                    
-                    advocate.expertise.forEach(item => {
-                        html += `<li>${item}</li>`;
-                    });
-                    
-                    html += `</ul>`;
-                    
-                    content.innerHTML = html;
-                    
-                    // Position the card based on screen size
-                    if (window.innerWidth >= 1024) {
-                        // Desktop - position over the clicked advocate's card
-                        const advocateElement = document.querySelector(`[onclick="showAdvocateCard('${advocateId}')"]`);
-                        const rect = advocateElement.getBoundingClientRect();
-                        
-                        card.style.left = `${rect.left + rect.width/2}px`;
-                        card.style.top = `${rect.top + rect.height/2}px`;
-                        card.style.transform = 'translate(-50%, -50%) scale(1)';
-                    } else {
-                        // Mobile - center of screen
-                        card.style.left = '50%';
-                        card.style.top = '50%';
-                        card.style.transform = 'translate(-50%, -50%) scale(1)';
-                    }
-                    
-                    card.style.opacity = '1';
-                    card.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
-                }
-            
-                function hideAdvocateCard() {
-                    const card = document.getElementById('advocate-info-card');
-                    card.style.opacity = '0';
-                    card.style.transform = 'translate(-50%, -50%) scale(0.95)';
-                    
-                    // Hide after transition completes
-                    setTimeout(() => {
-                        card.classList.add('hidden');
-                    }, 300);
-                    
-                    document.body.style.overflow = 'auto';
-                }
-            
-                // Close card when clicking outside
-                window.addEventListener('click', (e) => {
-                    const card = document.getElementById('advocate-info-card');
-                    if (!card.contains(e.target) && !e.target.closest('[onclick^="showAdvocateCard"]')) {
-                        hideAdvocateCard();
-                    }
+
+                advocate.expertise.forEach(item => {
+                    html += `<li>${item}</li>`;
                 });
-            </script>
-            <!-- Team End -->
+
+                html += `</ul>`;
+
+                content.innerHTML = html;
+
+                // Position the card based on screen size
+                if (window.innerWidth >= 1024) {
+                    // Desktop - position over the clicked advocate's card
+                    const advocateElement = document.querySelector(`[onclick="showAdvocateCard('${advocateId}')"]`);
+                    const rect = advocateElement.getBoundingClientRect();
+
+                    card.style.left = `${rect.left + rect.width / 2}px`;
+                    card.style.top = `${rect.top + rect.height / 2}px`;
+                    card.style.transform = 'translate(-50%, -50%) scale(1)';
+                } else {
+                    // Mobile - center of screen
+                    card.style.left = '50%';
+                    card.style.top = '50%';
+                    card.style.transform = 'translate(-50%, -50%) scale(1)';
+                }
+
+                card.style.opacity = '1';
+                card.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function hideAdvocateCard() {
+                const card = document.getElementById('advocate-info-card');
+                card.style.opacity = '0';
+                card.style.transform = 'translate(-50%, -50%) scale(0.95)';
+
+                // Hide after transition completes
+                setTimeout(() => {
+                    card.classList.add('hidden');
+                }, 300);
+
+                document.body.style.overflow = 'auto';
+            }
+
+            // Close card when clicking outside
+            window.addEventListener('click', (e) => {
+                const card = document.getElementById('advocate-info-card');
+                if (!card.contains(e.target) && !e.target.closest('[onclick^="showAdvocateCard"]')) {
+                    hideAdvocateCard();
+                }
+            });
+        </script>
+        <!-- Team End -->
 
 
-            <!-- FAQs Start
+        <!-- FAQs Start
             <div class="faqs">
                 <div class="container">
                     <div class="row">
@@ -1021,139 +1061,146 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
             FAQs ends -->
 
 
-            <!-- Testimonial Start -->
-            <div class="testimonial">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Review From Client</h2>
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Review From Client</h2>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="owl-carousel testimonials-carousel">
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-2.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-3.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-4.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-4.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-2.jpg" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <i class="fa fa-quote-right"></i>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <img src="img/testimonial-3.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
+                            <div class="col-9">
+                                <h2>Client Name</h2>
+                                <p>Profession</p>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget
+                                    velit
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Testimonial End -->
+        </div>
+        <!-- Testimonial End -->
 
 
-            <!-- Blog Star
+        <!-- Blog Star
             <div class="blog">
                 <div class="container">
                     <div class="section-header">
@@ -1262,117 +1309,123 @@ class="wrapper opacity-0 transition-opacity duration-700 ease-in-out"
                 </div>
             </div>
              -->
-            
-            
-            <!-- Newsletter Start -->
-        
-            <!-- Newsletter End -->
 
 
-            <!-- Footer Start -->
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-about">
-                                <h2>About Us</h2>
-                                <p>
-                                    <p class="font-bold ">  ZA LEGAL ASSOCIATES </p> Is a formidable legal powerhouse, renowned for its unwavering dedication to delivering righteousness and excellence in the legal fraternity. With a strong presence in Mumbai/Thane, we have established ourselves as the premier destination for individuals and organizations seeking exceptional legal representation.                               
-                                  </p>
-                            </div>
+        <!-- Newsletter Start -->
+
+        <!-- Newsletter End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-about">
+                            <h2>About Us</h2>
+                            <p>
+                            <p class="font-bold "> ZA LEGAL ASSOCIATES </p> Is a formidable legal powerhouse, renowned
+                            for its unwavering dedication to delivering righteousness and excellence in the legal
+                            fraternity. With a strong presence in Mumbai/Thane, we have established ourselves as the
+                            premier destination for individuals and organizations seeking exceptional legal
+                            representation.
+                            </p>
                         </div>
-                        <div class="col-md-6 col-lg-8">
-                            <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Divorce Litigation</a>
-                                <a href="">Company Litigation</a>
-                                <a href="">Criminal Litigation</a>
-                                <a href="">Cooperative & Society</a>
-                                <a href="">Corporate Law</a>
-                                <a href="">High Court Matters</a>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Services Areas</h2>
+                                    <a href="">Civil Law</a>
+                                    <a href="">Family Law</a>
+                                    <a href="">Divorce Litigation</a>
+                                    <a href="">Company Litigation</a>
+                                    <a href="">Criminal Litigation</a>
+                                    <a href="">Cooperative & Society</a>
+                                    <a href="">Corporate Law</a>
+                                    <a href="">High Court Matters</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                            <!--<a href="">Case Studies</a> -->
-                                <a href="">Contact</a>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Useful Pages</h2>
+                                    <a href="">About Us</a>
+                                    <a href="">Practices</a>
+                                    <a href="">Attorneys</a>
+                                    <!--<a href="">Case Studies</a> -->
+                                    <a href="">Contact</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-contact">
+                                    <h2>Get In Touch</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>
                                     <div>
-                                       
+
                                         <p class="font-bold">Head Office:</p>
                                         <p>306/307, Madhava, E-Block BKC, Near Jio Mall, Bandra (E), Mumbai - 400051</p>
                                         <p class="font-bold mt-2">Branch Office:</p>
-                                        <p>Office No.5, Grnd. Flr., Prospect Chamber Annex, Pitha Street, 1st Cabin, Mezzanine Floor, Fort, Mumbai - 400001</p>
+                                        <p>Office No.5, Grnd. Flr., Prospect Chamber Annex, Pitha Street, 1st Cabin,
+                                            Mezzanine Floor, Fort, Mumbai - 400001</p>
                                     </div>
-                                </p> 
-                                <br>
-                                <p><i class="fa fa-phone-alt"></i>
+                                    </p>
+                                    <br>
+                                    <p><i class="fa fa-phone-alt"></i>
                                     <div>
                                         <p>+91-9821261730</p>
                                         <p>+91-8779919249</p>
                                         <p>+91-8562373786</p>
                                         <p>022 44555454</p>
                                     </div>
-                                </p>
-                                <br>
-                                <p><i class="fa fa-envelope"></i>zalegal.law@gmail.com</p>   
+                                    </p>
+                                    <br>
+                                    <p><i class="fa fa-envelope"></i>zalegal.law@gmail.com</p>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="container footer-menu">
-                    <div class="f-menu">
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
-                        </div>
-                     <!--   <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                            </div> -->
                     </div>
                 </div>
             </div>
-            <!-- Footer End -->
-            
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <div class="container footer-menu">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                    </div>
+                    <!--   <div class="col-md-6">
+                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                            </div> -->
+                </div>
+            </div>
         </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
 
 
     <!--Yeh jo div hai neeche ka woh topbar k just upar likha hua div hai-->
     </div>
-</div>
+    </div>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -152,7 +152,7 @@ a:focus {
 .top-bar .top-bar-right {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    
 }
 
 .top-bar .text {
