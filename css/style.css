@@ -798,11 +798,11 @@ a:focus {
 }
 
 .feature .feature-item {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .feature .feature-icon {
-    height: 180px;
+    height: 250px;
     position: relative;
     display: flex;
     align-items: center;
@@ -842,6 +842,7 @@ a:focus {
     bottom: 0;
     background: #aa9166;
 }
+
 
 .feature .feature-item p {
     margin: 0;
